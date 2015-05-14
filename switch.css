@@ -1,0 +1,43 @@
+button {
+    border: none;
+    outline: none;
+}
+
+button.switch-on,
+button.switch-off {
+    position: relative;
+    width: 60px;
+    height: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button.switch-on:before,
+button.switch-off:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    transition: right 0.1s linear;
+}
+
+button.switch-on {
+    background-color:#679660;
+}
+
+button.switch-on:before {
+    right: 0;
+    background-color: #74A26E;
+}
+
+button.switch-off {
+    background-color: #E7E7E7;
+}
+
+button.switch-off:before{
+    right: 30px;
+    background-color: #F4F4F4;
+}

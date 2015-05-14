@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="switch.css">
+    </head>
+    <body>
+        <button class="switch-off"></button>
+        <button class="switch-on"></button>
+
+        <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script>
+            $('.switch-off, .switch-on').on('click', function() {
+                var button = $(this);
+
+                if (button.hasClass('switch-on')) {
+                    button.removeClass('switch-on').addClass('switch-off');
+                } else {
+                    button.removeClass('switch-off').addClass('switch-on');
+                }
+            });
+        </script>
+    </body>
+</html>
