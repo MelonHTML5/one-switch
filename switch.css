@@ -1,43 +1,92 @@
-button {
+/*
+Theme1
+*/
+button[theme="1"] {
     border: none;
     outline: none;
 }
 
-button.switch-on,
-button.switch-off {
+button[theme="1"].switch-on,
+button[theme="1"].switch-off {
     position: relative;
     width: 60px;
-    height: 10px;
+    height: 20px;
     border-radius: 10px;
     cursor: pointer;
 }
 
-button.switch-on:before,
-button.switch-off:before {
+button[theme="1"].switch-on:before,
+button[theme="1"].switch-off:before {
     content: '';
     position: absolute;
-    top: -10px;
+    top: -5px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: right 0.1s linear;
 }
 
-button.switch-on {
-    background-color:#679660;
+button[theme="1"].switch-on {
+    background-color: #B1DEDB;
 }
 
-button.switch-on:before {
+button[theme="1"].switch-on:before {
     right: 0;
-    background-color: #74A26E;
+    background-color: #029384;
 }
 
-button.switch-off {
-    background-color: #E7E7E7;
+button[theme="1"].switch-off {
+    background-color: #B2B2B2;
 }
 
-button.switch-off:before{
+button[theme="1"].switch-off:before{
     right: 30px;
+    background-color: #ECECEC;
+}
+
+/*
+Theme 2
+*/
+button[theme="2"] {
+    border: none;
+    outline: none;
+}
+
+button[theme="2"].switch-on,
+button[theme="2"].switch-off {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button[theme="2"].switch-on:before,
+button[theme="2"].switch-off:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: right 0.1s linear;
+}
+
+button[theme="2"].switch-on {
+    background-color: #4BD863;
+}
+
+button[theme="2"].switch-on:before {
+    right: 2px;
+}
+
+button[theme="2"].switch-off {
     background-color: #F4F4F4;
+}
+
+button[theme="2"].switch-off:before{
+    right: 32px;
 }
