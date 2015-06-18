@@ -1,19 +1,21 @@
 /*
 Theme1
 */
-button[theme="1"] {
-    border: none;
-    outline: none;
-    overflow: visible;
-}
-
 button[theme="1"].switch-on,
 button[theme="1"].switch-off {
     position: relative;
+    overflow: visible;
     width: 60px;
     height: 20px;
+    border: none;
+    outline: none;
     border-radius: 10px;
     cursor: pointer;
+}
+
+button[theme="1"]:disabled {
+    cursor: default;
+    opacity: 0.5;
 }
 
 button[theme="1"].switch-on:before,
@@ -49,19 +51,21 @@ button[theme="1"].switch-off:before{
 /*
 Theme 2
 */
-button[theme="2"] {
-    border: none;
-    outline: none;
-    overflow: visible;
-}
-
 button[theme="2"].switch-on,
 button[theme="2"].switch-off {
     position: relative;
+    overflow: visible;
     width: 60px;
     height: 30px;
+    border: none;
+    outline: none;
     border-radius: 20px;
     cursor: pointer;
+}
+
+button[theme="2"]:disabled {
+    cursor: default;
+    opacity: 0.5;
 }
 
 button[theme="2"].switch-on:before,
