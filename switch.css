@@ -4,6 +4,7 @@ Theme1
 button[theme="1"] {
     border: none;
     outline: none;
+    overflow: visible;
 }
 
 button[theme="1"].switch-on,
@@ -51,6 +52,7 @@ Theme 2
 button[theme="2"] {
     border: none;
     outline: none;
+    overflow: visible;
 }
 
 button[theme="2"].switch-on,

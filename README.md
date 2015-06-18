@@ -1,1 +1,1 @@
-Switch/Toggle button in ONE element
+Single Switch/Toggle Button
