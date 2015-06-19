@@ -5,7 +5,7 @@ button[theme="1"].switch-on,
 button[theme="1"].switch-off {
     position: relative;
     overflow: visible;
-    width: 60px;
+    width: 50px;
     height: 20px;
     padding: 0;
     margin: 5px 0;
@@ -46,7 +46,7 @@ button[theme="1"].switch-off {
 }
 
 button[theme="1"].switch-off:before{
-    right: 30px;
+    right: 20px;
     background-color: #ECECEC;
 }
 
@@ -57,7 +57,7 @@ button[theme="2"].switch-on,
 button[theme="2"].switch-off {
     position: relative;
     overflow: visible;
-    width: 60px;
+    width: 50px;
     height: 30px;
     padding: 0;
     margin: 0;
@@ -98,7 +98,7 @@ button[theme="2"].switch-off {
 }
 
 button[theme="2"].switch-off:before{
-    right: 32px;
+    right: 22px;
 }
 
 /*
@@ -221,7 +221,7 @@ button[theme="4"].switch-off:before {
 button[theme="4"].switch-on:after,
 button[theme="4"].switch-off:after {
     position: absolute;
-    top: 0px;
+    top: 0;
     line-height: 26px;
     color: #FFFFFF;
     font-size: 12px;
@@ -231,17 +231,17 @@ button[theme="4"].switch-off:after {
 
 button[theme="4"].switch-on:before {
     right: -17px;
-    background-image: linear-gradient(to bottom, #FFFFFF, #DDDDDD);
+    background-image: linear-gradient(to bottom, #DDDDDD, #FFFFFF);
 }
 
 button[theme="4"].switch-off:before {
     right: 43px;
-    background-image: linear-gradient(to bottom, #DDDDDD, #FFFFFF);
+    background-image: linear-gradient(to bottom, #FFFFFF, #DDDDDD);
 }
 
 button[theme="4"].switch-on:after {
     content: 'ON';
-    left: 16px;
+    left: 14px;
 }
 
 button[theme="4"].switch-off:after {
