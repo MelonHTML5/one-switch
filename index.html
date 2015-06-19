@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" type="text/css" href="switch.css">
     </head>
     <body>
-        <button theme="1" class="switch-off"></button>
-        <button theme="1" class="switch-on"></button>
-        <button theme="1" class="switch-on" disabled></button>
-        <br><br>
-        <button theme="2" class="switch-off"></button>
-        <button theme="2" class="switch-on"></button>
-        <button theme="2" class="switch-on" disabled></button>
-
+        <div class="box">
+            <button theme="1" class="switch-off"></button>
+            <button theme="1" class="switch-on"></button>
+            <button theme="1" class="switch-on" disabled></button>
+        </div>
+        <div class="box">
+            <button theme="2" class="switch-off"></button>
+            <button theme="2" class="switch-on"></button>
+            <button theme="2" class="switch-on" disabled></button>
+        </div>
+        <div class="box">
+            <button theme="3" class="switch-off"></button>
+            <button theme="3" class="switch-on"></button>
+            <button theme="3" class="switch-on" disabled></button>
+        </div>
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
         <script>
             $('.switch-off, .switch-on').on('click', function() {
