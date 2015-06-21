@@ -241,10 +241,10 @@ button[theme="4"].switch-off:before {
 
 button[theme="4"].switch-on:after {
     content: 'ON';
-    left: 14px;
+    left: 18px;
 }
 
 button[theme="4"].switch-off:after {
     content: 'OFF';
-    right: 13px;
+    right: 14px;
 }
